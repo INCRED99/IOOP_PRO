@@ -73,7 +73,11 @@ public:
     }
     ~Game() {
         delete player;
+<<<<<<< HEAD
         for (auto const&entry : worldMap) delete entry.second;
+=======
+        for (auto const& [id, room] : worldMap) delete room;
+>>>>>>> 253370af55256d87389ffc8d9df32379e7f28fe0
     }
 
     void startLoop() {
